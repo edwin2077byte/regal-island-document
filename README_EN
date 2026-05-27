@@ -1,0 +1,216 @@
+# Regal Island
+
+## About Regal Island
+
+**Regal Island** is an innovative Web3 gaming entertainment platform that perfectly blends traditional mini-games with blockchain economic models. Here, you are not just a player, but also a builder of the ecosystem — earn token rewards through gaming, unlock membership privileges, participate in platform governance, and experience a brand new "Play to Earn" entertainment model.
+
+> 💡 **Core Philosophy**: Make gaming more valuable, make entertainment profitable
+
+## Core Features
+
+### 🎮 Gaming Content
+
+| Feature | Description |
+|---------|-------------|
+| Extensive Games | A collection of premium mini-games covering casual, strategy, competitive and more genres |
+| Piggy Bank Game | Unique Piggy Game mechanics — accumulate rewards and enjoy surprise unboxings |
+| Monopoly Adventure | Classic Monopoly gameplay with board exploration, random events, and generous rewards |
+| Farm Management | Planting, breeding, and building — create your own virtual farm |
+| Fortune Wars | Strategic battles with Buff bonuses, skill combinations, and ranking rewards |
+| Smart Matching | Automatic game room matching for fair competition and real-time battles |
+
+### 👤 User Center
+
+- **Multi-Platform Login**: Supports guest, account/password, Google account, and more login methods
+- **Character Growth**: Level up, unlock skills, collect skins — build your unique avatar
+- **Game Records**: Automatically tracks game stats and historical data
+- **Asset Management**: Unified management of gold, crystals, tokens, and other assets
+- **Social Sharing**: Invite friends to join and both receive generous rewards
+
+### 💰 Token Economy System (Regal Token)
+
+| Earning Method | Description |
+|----------------|-------------|
+| 🎁 Airdrop Rewards | Participate in platform events to claim free token airdrops |
+| ⏱️ Gaming Rewards | Accumulate playtime and points to automatically earn token rewards |
+| 🌟 Membership Bonus | Members enjoy higher token yields and exclusive benefits |
+| 🔄 Exchange System | Freely exchange between multiple mainstream cryptocurrencies and platform tokens |
+| 💎 Mining Rewards | Participate in platform mining activities for continuous token earnings |
+| 🎉 Referral Rebates | Invite friends to join the game and earn ongoing commission rewards |
+
+**Token Utilities**:
+
+- Unlock premium game content
+- Exchange for membership benefits
+- Purchase in-game items and skins
+- Withdraw to mainstream wallets (TON, BNB Chain, TRON, etc.)
+- Participate in platform governance voting
+
+### 👑 Membership System
+
+| Level | Benefits |
+|-------|----------|
+| Free User | Basic games, ad rewards, daily check-in |
+| VIP Member | High yield bonus, exclusive airdrops, priority support, ad-free experience |
+
+### 🔐 Security Features
+
+- **Payment PIN**: 6-digit PIN to protect your assets
+- **Wallet Binding**: Supports binding TON, MetaMask, Trust Wallet, and other wallets
+- **Withdrawal Review**: Multi-layer verification mechanism to ensure fund security
+- **IP Rate Limiting**: Intelligent anti-bot mechanism to protect fair play environment
+- **Google Verification**: Supports Google Authenticator two-factor authentication
+
+## Technical Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                        Client Layer                      │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐             │
+│  │   Web    │  │  Mobile  │  │ Telegram │             │
+│  │   (H5)   │  │(App/H5)  │  │ Mini App │             │
+│  └──────────┘  └──────────┘  └──────────┘             │
+└─────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│                      Backend Services                    │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐             │
+│  │   Gin    │  │  Redis   │  │  MySQL   │             │
+│  │  (Go)    │  │ (Cache)  │  │ (Data)   │             │
+│  └──────────┘  └──────────┘  └──────────┘             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐             │
+│  │ WebSocket│  │  Game    │  │  Cron    │             │
+│  │ Service  │  │ Engine   │  │  Tasks   │             │
+│  └──────────┘  └──────────┘  └──────────┘             │
+└─────────────────────────────────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│                     Blockchain Layer                     │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐             │
+│  │   TON    │  │   BNB    │  │   TRON   │             │
+│  │ Network  │  │  Chain   │  │ Network  │             │
+│  └──────────┘  └──────────┘  └──────────┘             │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐             │
+│  │  Regal   │  │ Multiple │  │ Contract │             │
+│  │  Token   │  │ Crypto   │  │ Interaction            │
+│  └──────────┘  └──────────┘  └──────────┘             │
+└─────────────────────────────────────────────────────────┘
+```
+
+### Technology Stack
+
+**Frontend**
+
+- HTML5 / JavaScript
+- Telegram Mini App SDK
+- WebSocket Real-time Communication
+- Responsive Layout Design
+
+**Backend**
+
+- Go + Gin Framework
+- GORM (ORM)
+- Redis (Cache)
+- MySQL (Database)
+- WebSocket (Real-time Communication)
+- Modular Architecture (letou Framework)
+- Cron (Scheduled Tasks)
+
+**Blockchain**
+
+- TON Network
+- BNB Smart Chain
+- TRON Network
+- Regal Token (Platform Token)
+- Supports USDT (TRC20/ERC20), TON, Stars, and more cryptocurrencies
+- TokenPay / QuantixCore Payment Channels
+
+**Third-Party Services**
+
+- Facebook Pixel (Analytics)
+- Google Pay / Apple Pay (In-App Purchases)
+- Regional Payment Channels (MyPay, PayGoPay, OmmoPay, AiPay, etc.)
+
+## Quick Start
+
+### Web Access
+
+Visit the demo site directly: https://[your-domain].com
+
+### Telegram Mini App
+
+Search for the bot in Telegram and launch the app with one click
+
+### Local Development
+
+**Hall Server**
+
+```bash
+cd hall
+go mod tidy
+go run main.go
+```
+
+**Game Server**
+
+```bash
+cd games/[game-name]/server
+go mod tidy
+go run main.go
+```
+
+**Early Warning Service**
+
+```bash
+cd services/GameEarlyWarningService
+go mod tidy
+go run main.go
+```
+
+## FAQ
+
+### Q: How can I earn more tokens?
+
+**A**:
+
+1. Activate VIP membership to enjoy exclusive airdrop benefits
+2. Maintain daily gaming habits to accumulate playtime and points rewards
+3. Complete daily tasks and achievements for additional tokens
+4. Invite friends to join — both parties receive rewards
+5. Participate in platform mining activities for continuous earnings
+
+### Q: Can tokens be withdrawn?
+
+**A**: Yes. After binding an external wallet (supports TON, BNB Chain, TRON networks) and setting a payment PIN, you can apply for withdrawal on the wallet page.
+
+### Q: How long does it take for game rewards to arrive?
+
+**A**: The system calculates game points and playtime in real-time. Token rewards will be automatically distributed to your account after the daily settlement.
+
+### Q: What if I forget my payment PIN?
+
+**A**: You can reset your payment PIN on the wallet page after identity verification.
+
+### Q: What payment methods are supported?
+
+**A**: The platform supports multiple payment methods, including:
+- Cryptocurrency payments (USDT, TON, Stars, etc.)
+- Google Pay / Apple Pay
+- Regional local payment channels (Philippines, Indonesia, Thailand, Vietnam, etc.)
+- Telegram Stars payments
+
+## Important Notes
+
+⚠️ **Important Reminders**:
+
+- Please ensure you operate on the correct blockchain network, as tokens are only valid on their respective networks
+- Carefully verify wallet addresses before withdrawal — on-chain transactions are irreversible
+- Game rewards have daily caps. Please follow platform announcements for rule adjustments
+- The system monitors cheating behavior 24/7. Any violation will result in cleared rewards and account suspension
+- Please keep your account information and payment PIN secure to avoid asset loss
+
+---
+
+**🎮 Make Gaming More Valuable · Regal Token — Make Entertainment Profitable**
